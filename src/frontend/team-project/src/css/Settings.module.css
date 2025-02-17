@@ -1,0 +1,117 @@
+.settingsContainer {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 날짜 및 시간 표시 */
+.settingsDateTime {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 제목 스타일 */
+.settingsTitle {
+  margin-right: 12px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* 챗봇 이름 입력 필드 */
+.settingslabel,
+.settingsselectLabel {
+  margin-right: 7px;
+  display: block;
+  font-size: 22px;
+  color: blue;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.settingsselect{
+  margin: 0 auto;
+  width: 316px;
+  padding: 0.5rem;
+  font-size: 22px;
+  text-align: center;
+}
+
+.settingsinput {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 300px;
+  padding: 0.5rem;
+  font-size: 22px  ;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  text-align: center;
+}
+.settingsselectLabel{
+  margin-right: 7px;
+  font-size: 22px;
+}
+
+.settingsinput:focus,
+.settingsselect:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 버튼 스타일 */
+.settingsButton {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align:-webkit-center;
+  margin-top: 15px;
+  display: block;
+}
+
+.settingsButton:hover {
+  background-color: #45a049;
+}
+
+/* 📱 반응형 스타일 (768px 이하 화면) */
+@media (max-width: 768px) {
+  .settingsTitle {
+    font-size: 2rem;
+  }
+  
+  .settingsinput,
+  .settingsselect,
+  .settingsButton {
+    width: 90%;
+  }
+}
+
+/* 📱 더 작은 화면 (480px 이하) */
+@media (max-width: 480px) {
+  .settingsTitle {
+    font-size: 1.8rem;
+  }
+
+  .settingsinput,
+  .settingsselect,
+  .settingsButton {
+    width: 100%;
+  }
+}

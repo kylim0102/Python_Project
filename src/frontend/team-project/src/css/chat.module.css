@@ -1,0 +1,187 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-4px);
+  }
+
+  50% {
+    transform: translateX(4px);
+  }
+
+  75% {
+    transform: translateX(-4px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* 전체 채팅 컨테이너 */
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  height: 100vh;
+  margin: auto;
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 날짜 및 시간 표시 */
+.chatDataTime {
+  padding: 10px;
+  background: #292929;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid #444;
+}
+
+a {
+  color: cornsilk;
+}
+
+/* 채팅 히스토리 */
+.chatHistory {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #1e1e1e;
+}
+
+/* 채팅 메시지 공통 스타일 */
+.chatMessageUser,
+.chatMessageChatbot {
+  white-space: pre-line;
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 10px;  
+  font-size: 13px;
+  line-height: 1.5;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 사용자 메시지 */
+.chatMessageUser {
+  align-self: flex-end;
+  background: #007aff;
+  color: #fff;
+  border-bottom-right-radius: 0;
+}
+
+/* 챗봇 메시지 */
+.chatMessageChatbot {
+  align-self: flex-start;
+  background: #444;
+  color: #fff;
+  border-bottom-left-radius: 0;
+}
+
+/* 채팅 메시지의 시간 표시 */
+.chatTimeUser,
+.chatTimeChatbot {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.chatTimeChatbot {
+  text-align: left;
+}
+
+/* 입력 영역 */
+.chatInputArea {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #292929;
+  border-top: 1px solid #444;
+}
+
+.chatInputArea input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  background: #3a3a3a;
+  color: white;
+}
+
+.chatInputArea input::placeholder {
+  color: #aaa;
+}
+
+.chatInputArea button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+/* 전송 버튼 */
+.chatSendButton {
+  background: #007aff;
+  color: white;
+}
+
+.chatSendButton:hover {
+  background: #005ecb;
+}
+
+/* 음성 버튼 */
+.voiceButton {
+  background: #ff9500;
+  color: white;
+}
+
+.voiceButton:hover {
+  background: #cc7700;
+}
+
+/* 에러 메시지 */
+.errorMessage {
+  color: red;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+}
+
+/* 애니메이션 효과 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

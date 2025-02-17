@@ -1,0 +1,24 @@
+/* home.module.css */
+.homeContainer {
+  text-align: center;
+  padding: 40px;
+}
+
+.homeTitle {
+  font-size: 3rem;
+  color: #333;
+}
+
+.homeButton {
+  width: 120px;
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-top: 137px;
+  border-radius: 10px;
+}
+
+.homeButton:hover {
+  background-color: #0056b3;
+}
